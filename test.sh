@@ -20,8 +20,10 @@ export TRAVIS_BUILD_NUMBER=1
 export TRAVIS_REPO_SLUG=louiscklaw/test_on_github.git
 export GITHUB_TOKEN=5f96a076d65e0d11900bcee580db63f979e88497
 
-pipenv sync
-pipenv run python3 ./merge.py
+git push --dry-run https://5f96a076d65e0d11900bcee580db63f979e88497@github.com/louiscklaw/test-git-repo
+
+# pipenv sync
+# pipenv run python3 ./merge.py
 
 # git checkout feature/test_2
 # # export TRAVIS_BRANCH=feature/test_2
