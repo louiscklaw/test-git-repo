@@ -7,6 +7,8 @@ sudo apt update
 sudo apt install -y python3 python3-pip python3-dev python3-wheel python3-setuptools
 pip3 install --user pipenv
 
+git push https://$GITHUB_TOKEN@github.com/louiscklaw/test-git-repo feature/test_2
+
 # commit id 3956c9d
 
 # git checkout test/test_2
@@ -17,8 +19,8 @@ pip3 install --user pipenv
 # export TRAVIS_REPO_SLUG=louiscklaw/test_on_github.git
 # export GITHUB_TOKEN=8c50e8410e3f2587b2680fdfca9e055ac4c8fbdc
 
-pipenv sync
-pipenv run python3 ./merge.py
+# pipenv sync
+# pipenv run python3 ./merge.py
 
 # git checkout feature/test_2
 # # export TRAVIS_BRANCH=feature/test_2
