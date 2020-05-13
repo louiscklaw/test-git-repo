@@ -1,39 +1,34 @@
 #!/usr/bin/env bash
 
+rm -rf /tmp/1
+
 set -ex
 
 
-sudo apt update
-sudo apt install -y python3 python3-pip python3-dev python3-wheel python3-setuptools
-pip3 install --user pipenv
-
-mkdir -p /tmp/1
-cd /tmp/1
-  git clone  -b test/test_2 https://$GITHUB_TOKEN@github.com/louiscklaw/test-git-repo
-
-  git checkout -b hahaha/test_2
-
-  git push --dry-run https://$GITHUB_TOKEN@github.com/louiscklaw/test-git-repo hahaha/test_2
+# sudo apt update
+# sudo apt install -y python3 python3-pip python3-dev python3-wheel python3-setuptools
+# pip3 install --user pipenv
 
 # commit id 3956c9d
 
-# git checkout test/test_2
 
-# export TRAVIS_BRANCH=test/test_2
-# export TRAVIS_COMMIT=0edef86
-# export TRAVIS_BUILD_NUMBER=1
-# export TRAVIS_REPO_SLUG=louiscklaw/test_on_github.git
-# export GITHUB_TOKEN=8c50e8410e3f2587b2680fdfca9e055ac4c8fbdc
+git checkout test/test_2
 
-# pipenv sync
-# pipenv run python3 ./merge.py
+export TRAVIS_BRANCH=test/test_2
+export TRAVIS_COMMIT=0edef86
+export TRAVIS_BUILD_NUMBER=1
+export TRAVIS_REPO_SLUG=louiscklaw/test_on_github.git
+export GITHUB_TOKEN=5f96a076d65e0d11900bcee580db63f979e88497
+
+pipenv sync
+pipenv run python3 ./merge.py
 
 # git checkout feature/test_2
 # # export TRAVIS_BRANCH=feature/test_2
 # # export TRAVIS_COMMIT=0edef86
 # # export TRAVIS_BUILD_NUMBER=1
 # # export TRAVIS_REPO_SLUG=louiscklaw/test_on_github.git
-# # export GITHUB_TOKEN=8c50e8410e3f2587b2680fdfca9e055ac4c8fbdc
+# # export GITHUB_TOKEN=5f96a076d65e0d11900bcee580db63f979e88497
 
 # pipenv sync
 # pipenv run python3 ./merge.py
@@ -43,7 +38,7 @@ cd /tmp/1
 # # export TRAVIS_COMMIT=0edef86
 # # export TRAVIS_BUILD_NUMBER=1
 # # export TRAVIS_REPO_SLUG=louiscklaw/test_on_github.git
-# # export GITHUB_TOKEN=8c50e8410e3f2587b2680fdfca9e055ac4c8fbdc
+# # export GITHUB_TOKEN=5f96a076d65e0d11900bcee580db63f979e88497
 
 # pipenv sync
 # pipenv run python3 ./merge.py
