@@ -9,7 +9,7 @@ pip3 install --user pipenv
 
 git checkout -b feature/test_2
 
-git push https://$GITHUB_TOKEN@github.com/louiscklaw/test-git-repo feature/test_2
+git push --dry-run https://$GITHUB_TOKEN@github.com/louiscklaw/test-git-repo feature/test_2
 
 # commit id 3956c9d
 
