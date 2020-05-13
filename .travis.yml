@@ -1,2 +1,6 @@
+
+import:
+  - credentials.yml
+
 script:
   - ./test.sh
