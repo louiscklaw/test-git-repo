@@ -34,8 +34,8 @@ GITHUB_REPO = os.environ['TRAVIS_REPO_SLUG']
 GITHUB_TOKEN = os.environ['GITHUB_TOKEN']
 
 # TODO: resume https github uri
-# PUSH_URI="https://{}@github.com/{}".format(GITHUB_TOKEN, GITHUB_REPO)
-PUSH_URI="git@github.com:louiscklaw/test-git-repo.git"
+PUSH_URI="https://{}@github.com/{}".format(GITHUB_TOKEN, GITHUB_REPO)
+# PUSH_URI="git@github.com:louiscklaw/test-git-repo.git"
 
 def create_temp_dir():
   TEMP_DIR = local('mktemp -d', capture=True)
