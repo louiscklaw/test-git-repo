@@ -7,9 +7,13 @@ sudo apt update
 sudo apt install -y python3 python3-pip python3-dev python3-wheel python3-setuptools
 pip3 install --user pipenv
 
-git checkout -b hahaha/test_2
+mkdir -p /tmp/1
+cd /tmp/1
+  git clone  -b test/test_2 https://$GITHUB_TOKEN@github.com/louiscklaw/test-git-repo
 
-git push --dry-run https://$GITHUB_TOKEN@github.com/louiscklaw/test-git-repo hahaha/test_2
+  git checkout -b hahaha/test_2
+
+  git push --dry-run https://$GITHUB_TOKEN@github.com/louiscklaw/test-git-repo hahaha/test_2
 
 # commit id 3956c9d
 
