@@ -9,7 +9,7 @@ pip3 install --user pipenv
 
 # commit id 3956c9d
 
-git checkout test/test_2
+# git checkout test/test_2
 
 # export TRAVIS_BRANCH=test/test_2
 # export TRAVIS_COMMIT=0edef86
